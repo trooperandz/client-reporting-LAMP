@@ -23,7 +23,7 @@ include_once '../config/init.inc.php';
 	// Process user login.  Die to correct page
 	if($obj->processLoginForm($array)) {
 		// Login successful.  Proceed to main program page
-		die(header('Location: ../../index_test.php'));
+		die(header('Location: ../../dashboard.php'));
 	} else {
 		// Return to login screen and show errors
 		die(header('Location: ../../'.INDEX_SHORT));
