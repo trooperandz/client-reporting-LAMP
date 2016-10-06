@@ -1,1 +1,1 @@
-# client-reporting-LAMP
+# Service Transactions Client Reporting System - built on the LAMP stack
