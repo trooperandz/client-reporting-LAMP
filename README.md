@@ -1,1 +1,1 @@
-# Service Transactions Client Reporting System - built on the LAMP stack
+# Service Center Transactions Client Reporting System - Built on the LAMP stack
