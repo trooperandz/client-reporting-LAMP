@@ -1,0 +1,599 @@
+@media (min-width: 40.063em) {
+	.collapse_select {
+		margin-top: .42rem;
+		width: 130px;
+	}
+	.collapse_submit {
+		margin-left: 18px;
+	}
+}
+
+/* Custom styles after edumix integration */
+
+/* Edit the main logo styling */
+.profile img {
+	padding: 1px !important;
+}
+
+/* Add spacing to main menu sidebar <li>'s */
+.side-bar li {
+	padding: 5px 0;
+}
+
+.title_area {
+	/*padding: 1.1625rem 0.5rem 1.1625rem 1em;*/
+    border-width: 0;
+    height: 49px;
+    line-height: 49px !important;
+    background: #F9F9F9;
+    margin: 0 -15px 25px -15px;
+    border-radius: 0 !important;
+}    
+.title_area p {
+	margin: 8px 0px;
+}
+h4 {
+	/* Make all table titles and modal section titles lighter */
+	font-weight: 300 !important;
+}
+/* End edumix custom styles */
+
+/* Custom global styles - separate out later? */
+
+/* Make modal main headings lighter */
+.reveal-modal h2 {
+	font-weight: 200;
+}
+
+.blue {
+	color: #008cba;
+}
+.large-title {
+	font-size: 20px !important;
+}
+.medium-title {
+	font-size: 18px !important;
+}
+@media(min-width: 768px) {
+	.right-align {
+		text-align: right;
+	}
+}
+@media(max-width: 768px) {
+	/* hide user icon on right top menu on small screens. Else will cause display size layering issue */
+	.admin-pic-text i {
+		display: none !important;
+	}
+}
+.admin-pic-text i {
+	/* color for the user icon on main right user menu */
+	color: maroon !important;
+}
+
+.box {
+	/* margin for white box container.  Original was 20px 0 */
+	margin: 20px 0px 30px !important;
+}
+
+.box, .box-body {
+	/* padding for white box.  original was 20px */
+	padding: 5px !important; 
+}
+
+.box-body {
+	/* this was used as an inline style on original page example.  Extracted to here to remove inline style */
+	display: block;
+}	
+
+div.dataTables_wrapper {
+	/* margin for bottom of dataTable. original was 1.25em */
+	margin-bottom: .2em !important;
+}
+
+.search_feedback {
+/* Provide global styles for search parameter feedback */
+	color: green;
+	margin-bottom: 2px;
+}
+
+.mult_select {
+	/* make sure that multiple select box is a good height */
+	height: 200px;
+}
+
+input[type="text"], select, textarea {
+	/* make sure that input text is not bold and that it is the right size */
+	font-weight: 300;
+	font-size: 1em !important;
+}
+
+.misc_span {
+	/* provide misc span items the turquise-blue highlight color */
+	color: #008B8B;
+}
+
+table.no_sort_arrow thead tr th {
+	background-image: none !important;
+}
+
+/* Custom responsive table styles */
+
+.table-container /* Make table overflow screen on small devices */
+{
+	width: 100%;
+	overflow-y: auto;
+	overflow: auto;
+	margin: 0 0 1em;
+}
+
+.table-container::-webkit-scrollbar /* iOS fix table scrolling */
+{
+	-webkit-appearance: none;
+	width: 14px;
+	height: 14px;
+}
+
+.table-container::-webkit-scrollbar-thumb /* iOS fix table scrolling */
+{
+	border-radius: 8px;
+	border: 3px solid #fff;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+/* End custom global styles */
+
+.collapse_select {
+	height: 2rem;
+}
+
+.collapse_submit {
+	height: 2rem !important;
+}
+.concierge_label:hover {
+	cursor: default;
+}
+.total_ro_count {
+	margin-bottom: 0em;
+}
+.heading_main {
+	margin-bottom: 0em;
+}
+.rosurvey_title {
+	color: #00008B; 
+	font-size: 23px;
+}
+.rosurvey_subtitle {
+	color: gray;
+	font-size: 15px;
+}
+@media (min-width: 40.063em) {
+	.total_ro_count {
+		text-align: right;
+	}
+}
+@media (max-width: 40.063em) {
+	.hide_button {
+		margin-left: 13px;
+	}
+}
+.hide_button {
+	font-size: 14px; 
+	font-weight: bold; 
+}
+.error_msg {
+	color: red; 
+	font-weight: bold; 
+	font-size: 15px;
+}
+.success_msg {
+	color: #228B22; 
+	font-weight: bold; 
+	font-size: 15px;
+}
+#update_div1 {
+	color: #228B22; 
+	font-weight: bold; 
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+.ui-datepicker-calendar td {
+	height: 10px;
+}
+.panel input {
+	cursor: pointer;
+}
+input.placeholder {
+	color: #aaa;
+}
+textarea.placeholder {
+	color: #aaa;
+}
+label {
+	cursor: default;
+}
+
+/* Styles for main enterro form */
+.box.enterro-form {
+	margin-top: 8px !important;
+}
+/* end main enterro form styles */
+
+/* Styles for advisor selection dropdown */
+.advisor_form {
+	margin: 0; padding: 0;
+}
+.advisor_form span.prefix {
+	font-size: .75rem; 
+	background: none; 
+	border: none;
+}
+.advisor_label {
+	text-align: left;
+	margin-bottom: 3px;
+}
+.advisor_main_div {
+	padding-right: 0;
+}
+.advisor_div {
+	padding-left: 0px; 
+	padding-right: 0px;
+}
+#advisor_enterro {
+	width: 165px; 
+	margin-bottom: 3px;
+}
+.advisor_success_div {
+	padding-left: 0;
+}
+.advisor_success {
+	display: none;
+	color: green; 
+	font-size: 13px; 
+	text-align: left;
+}
+/* End advisor selection dropdown styles */
+
+/* Styles for RO table */
+.ro_table_subtitle {
+	font-size: 14px;
+}
+table.original {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+	/*font-size: 8pt;*/
+	border-collapse: collapse;  
+	margin-right: auto;
+	margin-left: auto;
+}
+table.original thead tr th {
+	background-color: whitesmoke;
+	font-size: 9.5pt;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	border-left: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	width: 150px;
+	height: 35px;
+	white-space: nowrap;
+}
+table.original tbody td {
+	color: #4d4d4d;
+	padding: 4px;
+	height: 60px;
+	text-align: center; 
+	border-bottom: 1px solid #CCCCCC;
+	font-weight: normal;			
+}
+table.original form {
+	padding: 0px;
+	margin-bottom: 0px;
+}
+table.original form input {
+	margin: 0rem;
+}
+/* End RO tables styles */
+
+.submit_td {
+	border-right: 1px solid #CCCCCC;
+}
+@media (min-width: 40.063em) {
+	table.original thead tr th {
+		background-image: url(bg.gif);
+	}
+}
+table.original thead tr th {
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+/* Styles for service search table */
+.svc_search_table {
+	border-collapse: collapse;
+	text-align: left;
+	width: 100%;
+}
+.svc_search_table tbody tr td {
+	text-align: left;
+	height: 27px;
+	padding: 0;
+	font-size: 13px;
+}
+.svc_search_table input[type=checkbox] {
+	margin-left: 8px;
+}
+/* End service search table styles */
+
+/* Styles for service selection tables */
+.svc_panel {
+	padding: .7rem .5rem; 
+	background-color: #FFFFFF; 
+	border: none; 
+	margin-bottom: 0;
+}
+.svc_panel_last {
+	padding: .7rem .5rem; 
+	background-color: #FFFFFF; 
+	border: none; 
+	margin-bottom: 11.5px;
+}
+.svc_table_heading {
+	font-size: 18px !important;
+	margin-bottom: 0;
+}
+@media(max-width: 768px) {
+	/* Make sure that the scrollbar is near the very bottom of the table */
+	table.service_table {
+		margin-bottom: 0 !important;
+	}
+}
+.service_table {
+	border-collapse: collapse;
+	text-align: center;
+	margin-left: 7px;
+	width: 98%;
+}
+.service_table thead tr th {
+	text-align: center;
+	background-color: #008cba;
+	color: #FFFFFF;
+	font-size: 14px;
+	white-space: nowrap;
+}
+.service_table thead {
+	padding: 0;
+}
+.service_table tbody tr td {
+	text-align: center;
+	height: 27px;
+	padding: 0;
+	font-size: 17px;
+	white-space: nowrap;
+}
+.service_table tbody tr{
+	height: 27px;
+	padding: 0;
+}
+.tr_first {
+	padding: 0;
+}
+.svc_th_title {
+	width: 180px; 
+	text-align: center;
+}
+.th_req_title {
+	width: 15px;
+}
+.th_add_dec_title {
+	width: 15px;
+	border-left: 1px solid #CCCCCC;
+}
+/* End service selection tables */
+
+/* Styles for service form elements */
+.service_checkbox {
+	display: inline-block; 
+	cursor: pointer;
+}
+input[type=checkbox] {
+	margin: 0;
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	vertical-align: middle;
+}
+textarea {
+	height: 30px;
+}
+/* End service form elements styles */
+
+/* Styles for metrics trending */
+table.trend thead tr th {
+	white-space: nowrap !important;
+	padding: 0.5rem 1rem 0.5rem;
+}
+
+table.trend tbody tr td {
+	height: 43px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+}
+
+/* End metrics trending styles */
+
+/* Styles for dealer comparison */
+table.dlr_comp td {
+	white-space: nowrap;
+}
+
+table.dlr_comp td.first {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+/* End styles dealer comparison */
+
+/* Styles for ro trend table */
+div#ro_trend_table_wrapper {
+	margin-bottom: 0.5em;
+}
+
+table.ro_trend_table {
+	width: 100%;
+	margin: 0.5em 0 !important;
+}
+
+table.ro_trend_table thead tr th {
+	white-space: nowrap;
+	background-image: none;
+}
+
+.first_last_ro {
+	/* Styles for ro entry information below table */
+	font-weight: normal;
+}
+
+.first_last_ro_msg {
+	font-weight: normal;
+}
+
+/* End ro trend styles */
+
+/* Styles for dealer summary table */
+table.dealer_summary thead tr th {
+	white-space: nowrap !important;
+	padding: 0.5rem 1rem 0.5rem;
+}
+
+table.dealer_summary tbody tr td {
+	height: 30px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+	white-space: nowrap;
+	border-left: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	padding: 4px;
+}
+/* End dealer summary styles */
+
+/* Styles for stat tables */
+table.stat tbody tr td {
+	height: 45px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+}
+
+/* End stat table styles */
+
+/* Styles for main metric tables */
+table.metric tbody tr td {
+	height: 43px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+}
+table.metric tfoot tr.other_sum td {
+	height: 43px;
+	text-align: center;
+	border-top: .2em solid #008cba;
+	font-weight: 500;
+}
+/* End main metric table styles */
+
+/* Styles for main labor and parts metrics table */
+table#labor_parts_table {
+	width: 100%;
+}
+
+/* End main labor parts metric table styles */
+
+/* Style for document listing table */
+table#user_doc_table input[type="submit"].button {
+	padding: 7px 14px !important;
+}
+table#user_doc_table thead tr th {
+	white-space: nowrap;
+}
+table#user_doc_table tbody tr td {
+	white-space: nowrap;
+}
+/* End document table styles */
+
+/* Styles for dealer listing table (all existing dealers) */
+table#dealer_list_table_all thead tr th {
+	white-space: nowrap;
+}
+
+table#dealer_list_table_all input[type="submit"].button {
+	padding: 7px 14px !important;
+}
+
+table#dealer_list_table_all thead tr th.doc_table_form_th.sorting {
+	width: 100px !important;
+}
+
+table#dealer_list_table_all tbody tr td.doc_table_form_td {
+	width: 100px !important;
+}
+
+/* End dealer listing table styles */
+
+
+/* Styles for view users tables */
+
+table#user_table thead tr th {
+	padding-left: 8px;
+	padding-right: 10px;
+}
+
+table#user_table tbody tr td {
+	height: 45px;
+}
+
+table#user_table input[type="submit"].button {
+	padding: 7px 14px !important;
+}
+
+/* End view users table styles */
+
+
+/* Styles for add dealer table */
+
+table#add_new_dealer {
+	width: 100%;
+}
+
+table#add_new_dealer thead tr th {
+	white-space: nowrap;
+	background-image: none !important;
+}	
+
+table#add_new_dealer input[type="text"], table#add_new_dealer select {
+	margin-bottom: 0;
+}
+
+/* End add dealer table styles */
+
+/* Styles for user setup request and user setup tables */
+
+table.user {
+	width: 100%;
+}
+
+table.user thead tr th {
+	white-space: nowrap;
+}
+
+table.user input[type="text"], table.user select {
+	margin-bottom: 0;
+}
+/* End user setup table styles */
+
+/* Styles for error and success messages */
+.form_error {
+	display: none;
+	color: red; 
+	font-size: 13px;
+}
+.form_ro_search_error {
+	/* for ro search modal */
+	display: none;
+	color: red; 
+	font-size: 13px;
+}
+.ro_success {
+	display: none;
+	color: green; 
+	font-size: 13px;
+}

@@ -1,0 +1,168 @@
+@media print {
+	/* Hide these elements from print view */
+	a.tooltip-tip, footer, div#skin-select, div.top-bar-nest, th.table_action, 
+	td.table_action, div.dataTables_info, div.dataTables_paginate, div.dataTables_length, 
+	div.dataTables_filter  {
+		display: none;
+	}
+	/* Make sure that page doesn't break right after table heading */
+	div.title_area {
+		page-break-after: avoid;
+	}
+	/* Make sure the table headings are not underlined */
+	table thead tr th a {
+		text-decoration: none;
+	}
+	/* Make sure that middle of table row td is not cut in half */
+	table tbody td {
+   		page-break-inside: avoid;
+   	}
+   	/* Make sure that dealer summary table fits printed page */
+   	table.dataTable {
+   		/* without this, table will overflow */
+   		width: 100% !important;
+   		overflow: visible !important;
+   		overflow-y: visible !important;
+   		overflow-x: visible !important;
+   		table-layout: fixed; /* Without this, <th>'s won't be inline with <td>'s */
+    }
+    /* Without this, tables can potentially overflow the print page, thus being hidden from view */
+   	table.dataTable thead tr th.sorting, table.dataTable thead tr th.sorting_asc, table.dataTable tbody tr td {
+   		padding: 0;
+   		width: 10px !important;
+   		overflow: hidden;
+   	}
+   	/* thead won't line up without this, and it will overflow the page */
+   	div.dataTables_scrollHeadInner {
+   		width: 100% !important;
+   	}
+   	/*Text will overflow in protrait view if text size is not reduced */
+   	table.dealer_summary.dataTable thead tr th {
+   		font-size: 10px;
+   	}
+   	table.dealer_table.dataTable thead tr th, table.user.dataTable thead tr th {
+   		font-size: 9px;
+   	}
+   	/* Text will overflow in portrait view if text size is not reduced */
+   	table.dealer_summary.dataTable tbody tr td {
+   		font-size: 12px;
+   	}
+   	table.dealer_table.dataTable tbody tr td, table.user.dataTable tbody tr td {
+   		font-size: 10px;
+   	}
+   	/* Dealer names will be cut off in portrait view if left out.  Too long */
+   	table.dealer_summary.dataTable tbody tr td.dlr_name {
+   		font-size: 9px;
+   	}
+   	table.dlr_comp.dataTable thead tr th {
+   		font-size: 7px;
+   	}
+   	table.dlr_comp.dataTable tbody tr td {
+   		font-size: 9px;
+   	}
+   	table.trend.dataTable thead tr th {
+   		font-size: 6px;
+   	}
+   	table.trend.dataTable tbody tr td {
+   		font-size: 8px;
+   	}
+   	/* Dealer name is too large to fit on printed page.  Show only the dealer code. */
+   	table.dlr_comp.dataTable tbody tr td.first, table.dealer_table.dataTable tbody tr td.first, table.user.dataTable tbody tr td.first {
+   		display: none;
+   	}
+   	table.dlr_comp.dataTable thead tr th.first, table.dealer_table.dataTable thead tr th.first, table.user.dataTable thead tr th.first {
+   		display: none;
+   	}
+   	/* Make sure that labor & parts comp table has larger font than comp metrics tables. Have more room in the table for text */
+   	table.dataTable.comp_labor_parts_table thead tr th, table.dataTable.trend_labor_parts_table thead tr th,
+   	table.dataTable.comp_labor_parts_table tbody tr td, table.dataTable.trend_labor_parts_table tbody tr td {
+   		font-size: 12px;
+   	}
+	/* Make the main page content flow back over where the side menu used to be so that it fills whole page */
+	div.wrap-fluid {
+		margin-left: 0px !important;
+	}
+	p.large-title {
+		font-weight: 200 !important;
+	}
+	div.title_area {
+		margin: 0;
+	}
+	/* Make sure that the box div does not push printed content too far down the page.
+	 * Make sure that tables are not separated from their titles 
+	**/
+	.box {
+		margin-top: 0 !important;
+		page-break-inside: avoid;
+	}
+	/* Make sure that any right-aligned div elements align to the left along with other main titles
+	 * and that size and weight are normal
+    **/
+	.right-align {
+		text-align: left;
+		font-size: 15px !important;
+		margin-top: 0 !important;
+		padding-top: 0 !important;
+		font-weight: normal;
+	}
+	/* Make sure that dataTables table is not cut off from view on printed page */
+	div.dataTables_scrollHead, div.dataTables_scrollBody {
+		overflow: visible !important;
+		overflow-y: visible !important;
+	}
+	/* Make sure table is 100% width, and that no content is cut off from printed page */
+	table {
+   		width: 100%;
+   		margin: 0;
+   		padding: 0;
+	}
+	
+	table thead tr th {
+		background-image: none;
+	}
+	/*
+	input {
+		border: none;
+		text-align: center;
+		font-size: 1em;
+		font-family: Trebuchet;
+	}
+	/*
+	ul {
+		display: none;
+	}
+	table td {
+		border-bottom: 1px solid #CCCCCC;
+	}
+	h4 {
+		margin-bottom: 6px;
+	}
+	/**Do not display printer icon on print page.  Would also mess up spacing from the heading to the <hr>**/
+	/*
+	.section_title {
+		padding: 0;
+		margin: 0;
+	}
+	.profit_summ_table th {
+		background-color: #dff0d8;
+	}
+	.cost_table {
+		padding-bottom: 10px;
+	}
+	.cost_table input {
+		text-align: center;
+		font-size: 1em;
+		font-family: Trebuchet;
+	}
+	.cost_table td {
+		height: 30px;
+	}
+	.cost_table td.bg-success {
+		background-color: #dff0d8;
+	}
+	.blue {
+	/*Used for service type main titles*/
+	/*
+	color: blue;
+	*/
+}
